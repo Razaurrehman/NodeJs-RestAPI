@@ -1,9 +1,7 @@
 // get dependencies
 const express = require('express');
 const bodyParser = require('body-parser');
-
 const app = express();
-
 // parse requests
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -40,5 +38,5 @@ app.get('/', (req, res) => {
 
 // listen on port 3000
 app.listen(config.serverport, () => {
-    console.log("Server is listening on port 3000");
+    console.log("Server is listening on port 8080");
 });
